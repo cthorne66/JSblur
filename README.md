@@ -16,25 +16,25 @@ How to use
 JSUtils is an object that is instanciated to the public variable as window.jsutils.  The main 
 method of this object to register a blur event takes 3 arguments, defined below.
 
-  /**
-   * This is how you register DOM elements for blur type events
-   * @param {object} selectorToRegister The jquery selector to be registered for blur events
-   * @param {boolean} unregisterAfter Should the selector be unregistered after being blur'd so it's not listened for anymore.  Set to true for auto-generated elements that should registered each time generated
-   * @param {object} callback An optional callback to be executed when the provided selector is blur'd
-   */
+  
+  
+  @param {object} selectorToRegister The jquery selector to be registered for blur events
+  @param {boolean} unregisterAfter Should the selector be unregistered after being blur'd so it's not listened for anymore.  Set to true for auto-generated elements that should registered each time generated
+  @param {object} callback An optional callback to be executed when the provided selector is blur'd
+  
 
 Examples
 
-  //basic example
+  Basic example
   jsblur.registerBlurEvent($('#divName'));
 
-  //more verbose example
+  More verbose example
   jsblur.registerBlurEvent($('#divName'),false,null);
 
-  //how to use with an element that is dynamically created & removed from the DOM
+  How to use with an element that is dynamically created & removed from the DOM
   jsblur.registerBlurEvent($('#divName'),true,null);
 
-  //example with a callback
+  Example with a callback
   var callbackFunction = function(){
     alert('element blurred');
   }

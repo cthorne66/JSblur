@@ -17,7 +17,7 @@ JSUtils is an object that is instanciated to the public variable as window.jsuti
 method of this object to register a blur event takes 3 arguments, defined below.
 
   /**
-   * This is how you register elements you would like to m
+   * This is how you register DOM elements for blur type events
    * @param {object} selectorToRegister The jquery selector to be registered for blur events
    * @param {boolean} unregisterAfter Should the selector be unregistered after being blur'd so it's not listened for anymore.  Set to true for auto-generated elements that should registered each time generated
    * @param {object} callback An optional callback to be executed when the provided selector is blur'd

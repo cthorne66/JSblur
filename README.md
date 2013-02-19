@@ -29,6 +29,8 @@ Also, if you want any click from within the registered DOM element to close it's
     <button class="closable">Click Me</button>
   ```
   
+  or, simply hit the escape key
+  
 
 Examples
 ============

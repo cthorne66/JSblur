@@ -18,9 +18,16 @@ method of this object to register a blur event takes 3 arguments, defined below.
 
   
   
-  @param {object} selectorToRegister The jquery selector to be registered for blur events
-  @param {boolean} unregisterAfter Should the selector be unregistered after being blur'd so it's not listened for anymore.  Set to true for auto-generated elements that should registered each time generated
-  @param {object} callback An optional callback to be executed when the provided selector is blur'd
+  * @param {object} selectorToRegister The jquery selector to be registered for blur events
+  * @param {boolean} unregisterAfter Should the selector be unregistered after being blur'd so it's not listened for anymore.  Set to true for auto-generated elements that should registered each time generated
+  * @param {object} callback An optional callback to be executed when the provided selector is blur'd
+
+
+Also, if you want any click from within the registered DOM element to close it's registered container, simply add the class 'closable' to it.
+
+  ```html
+    <button class="closable">Click Me</button>
+  ```
   
 
 Examples

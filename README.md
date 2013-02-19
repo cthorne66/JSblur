@@ -24,25 +24,37 @@ method of this object to register a blur event takes 3 arguments, defined below.
   
 
 Examples
+============
 
-  Basic example
-  jsblur.registerBlurEvent($('#divName'));
+  * Basic example
+    ```javascript
+      jsblur.registerBlurEvent($('#divName'));
+    ```
 
-  More verbose example
-  jsblur.registerBlurEvent($('#divName'),false,null);
 
-  How to use with an element that is dynamically created & removed from the DOM
-  jsblur.registerBlurEvent($('#divName'),true,null);
+  * More verbose example
+    ```javascript
+      jsblur.registerBlurEvent($('#divName'),false,null);
+    ```
 
-  Example with a callback
-  var callbackFunction = function(){
-    alert('element blurred');
-  }
-  jsblur.registerBlurEvent($('#divName'),false,callbackFunction);
 
-JSFiddle
+  * How to use with an element that is dynamically created & removed from the DOM
+    ```javascript
+      jsblur.registerBlurEvent($('#divName'),true,null);
+    ```
 
-  http://jsfiddle.net/cthorne66/GRwLC/10/
+
+  * Example with a callback
+    ```javascript
+    var callbackFunction = function(){
+      alert('element blurred');
+    }
+    jsblur.registerBlurEvent($('#divName'),false,callbackFunction);
+    ```
+
+  * JSFiddle
+  
+    http://jsfiddle.net/cthorne66/GRwLC/10/
 
 License
 =======
